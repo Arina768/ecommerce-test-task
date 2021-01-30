@@ -11,24 +11,27 @@
 <body>
 <header></header>
 <div class="header">
-    <a class="header__return-link link mobile" href="/">
+    <a class="header__return-link link mobile" href="/home">
         <img class="arrow-icon" src="assets/right%20arrow.png" alt="arrow icon"/>
         <span>Back To Results</span>
     </a>
     <nav aria-label="breadcrumb">
         <ol class="breadcrumbs">
-            <li><a href="/" class="link breadcrumb">Exchange</a></li>
-            <li><a href="/" class="link breadcrumb">Shoes</a></li>
-            <li><a href="/" class="link breadcrumb"> Athletic shoes</a></li>
+            <li><a href="/exchange" class="link breadcrumb" aria-label="exchange page">Exchange</a></li>
+            <li><a href="/exchange/shoes" class="link breadcrumb" aria-label="shoes page">Shoes</a></li>
+            <li><a href="/exchange/shoes/athletic-shoes" class="link breadcrumb" aria-label="athletic shoes page">Athletic
+                shoes</a></li>
             <li> Men's Athletic Shoes</li>
         </ol>
     </nav>
-    <h1 class="header__title">Men's Athletic Shoes</h1>
+    <h2 class="header__title">Men's Athletic Shoes</h2>
 </div>
 <div class="main">
-    <button class="filter-button mobile" id="filter-button">
-        <label for="filter-button">Filters</label>
-    </button>
+    <div class="button-wrapper mobile">
+        <button class="filter-button " id="filter-button">
+            <label for="filter-button">Filters</label>
+        </button>
+    </div>
     <div class="filter">
         <div>
             <h3>Department</h3>
@@ -51,26 +54,28 @@
             </div>
         </div>
     </div>
-    <div class="page">
+    <div>
         <div class="section">
             <span>Viewing 1-24 of 24</span>
             <div class="sort-menu">
                 <label for="sort"> Sort </label>
-                <select name="sort" id="sort">
-                    <option>Select</option>
-                </select>
+                <div class="select">
+                    <select name="sort" id="sort">
+                        <option>Select</option>
+                    </select>
+                </div>
             </div>
         </div>
         <div class="catalog">
             <div class="catalog__product">
                 <div class="product-image">
-                    <a href="/">
-                        <img alt="product image" src="assets/product-image_0.png">
+                    <a href="#" aria-label="product page">
+                        <img class="full-image" alt="product image" src="assets/product-image_0.png">
                     </a>
                 </div>
                 <div class="product-info">
                     <div>
-                        <h2 class="product-title">Adidas Outdoor Men's Caprock Trail Hiking Shoes</h2>
+                        <h3 class="product-title">Adidas Outdoor Men's Caprock Trail Hiking Shoes</h3>
                         <p class="old-price">$2,499.00</p>
                         <p>$2,960.00</p>
                         <p class="price red">$1,545.00 - $1,230.00 SALE</p>
@@ -81,20 +86,20 @@
                         <span class="icon-star"></span>
                         <span class="icon-star"></span>
                         <span class="icon-star"></span>
-                        <a href="/" class="link">(0)</a>
+                        <a href="/" class="link" aria-label="grades">(0)</a>
                     </div>
                 </div>
             </div>
             <div class="catalog__product border-none">
 
                 <div class="product-image">
-                    <a href="/">
-                        <img alt="product image" src="assets/product-image_1.png">
+                    <a href="#" aria-label="product page">
+                        <img alt="product image" class="full-image" src="assets/product-image_1.png">
                     </a>
                 </div>
                 <div class="product-info">
                     <div>
-                        <h2 class="product-title">Nike Men's Air Force 1 Running Shoes</h2>
+                        <h3 class="product-title">Nike Men's Air Force 1 Running Shoes</h3>
                         <p class="price">$2,371.99 - $2,399.99</p>
                     </div>
                     <div class="product-grade">
@@ -103,19 +108,19 @@
                         <span class="icon-star"></span>
                         <span class="icon-star"></span>
                         <span class="icon-star"></span>
-                        <a href="/" class="link">(0)</a>
+                        <a href="/" class="link" aria-label="grades">(0)</a>
                     </div>
                 </div>
             </div>
             <div class="catalog__product">
                 <div class="product-image">
-                    <a href="/">
-                        <img alt="product image" src="assets/product-image_0.png">
+                    <a href="#" aria-label="product page">
+                        <img class="full-image" alt="product image" src="assets/product-image_0.png">
                     </a>
                 </div>
                 <div class="product-info">
                     <div>
-                        <h2 class="product-title">Adidas Outdoor Men's Caprock Trail Hiking Shoes</h2>
+                        <h3 class="product-title">Adidas Outdoor Men's Caprock Trail Hiking Shoes</h3>
                         <p class="old-price">$2,499.00</p>
                         <p>$2,960.00</p>
                         <p class="price red">$1,545.00 - $1,230.00 SALE</p>
@@ -126,20 +131,20 @@
                         <span class="icon-star"></span>
                         <span class="icon-star"></span>
                         <span class="icon-star"></span>
-                        <a href="/" class="link">(0)</a>
+                        <a href="/" class="link" aria-label="grades">(0)</a>
                     </div>
                 </div>
             </div>
             <div class="catalog__product border-none">
 
                 <div class="product-image">
-                    <a href="/">
-                        <img alt="product image" src="assets/product-image_1.png">
+                    <a href="#" aria-label="product page">
+                        <img alt="product image" class="full-image" src="assets/product-image_1.png">
                     </a>
                 </div>
                 <div class="product-info">
                     <div>
-                        <h2 class="product-title">Nike Men's Air Force 1 Running Shoes</h2>
+                        <h3 class="product-title">Nike Men's Air Force 1 Running Shoes</h3>
                         <p class="price">$2,371.99 - $2,399.99</p>
                     </div>
                     <div class="product-grade">
@@ -148,19 +153,19 @@
                         <span class="icon-star"></span>
                         <span class="icon-star"></span>
                         <span class="icon-star"></span>
-                        <a href="/" class="link">(0)</a>
+                        <a href="/" class="link" aria-label="grades">(0)</a>
                     </div>
                 </div>
             </div>
             <div class="catalog__product">
                 <div class="product-image">
-                    <a href="/">
-                        <img alt="product image" src="assets/product-image_0.png">
+                    <a href="#" aria-label="product page">
+                        <img class="full-image" alt="product image" src="assets/product-image_0.png">
                     </a>
                 </div>
                 <div class="product-info">
                     <div>
-                        <h2 class="product-title">Adidas Outdoor Men's Caprock Trail Hiking Shoes</h2>
+                        <h3 class="product-title">Adidas Outdoor Men's Caprock Trail Hiking Shoes</h3>
                         <p class="old-price">$2,499.00</p>
                         <p>$2,960.00</p>
                         <p class="price red">$1,545.00 - $1,230.00 SALE</p>
@@ -171,39 +176,16 @@
                         <span class="icon-star"></span>
                         <span class="icon-star"></span>
                         <span class="icon-star"></span>
-                        <a href="/" class="link">(0)</a>
+                        <a href="/" class="link" aria-label="grades">(0)</a>
                     </div>
                 </div>
             </div>
-            <div class="catalog__product border-none">
-
-                <div class="product-image">
-                    <a href="/">
-                        <img alt="product image" src="assets/product-image_1.png">
-                    </a>
-                </div>
-                <div class="product-info">
-                    <div>
-                        <h2 class="product-title">Nike Men's Air Force 1 Running Shoes</h2>
-                        <p class="price">$2,371.99 - $2,399.99</p>
-                    </div>
-                    <div class="product-grade">
-                        <span class="icon-star"></span>
-                        <span class="icon-star"></span>
-                        <span class="icon-star"></span>
-                        <span class="icon-star"></span>
-                        <span class="icon-star"></span>
-                        <a href="/" class="link">(0)</a>
-                    </div>
-                </div>
-            </div>
-
         </div>
     </div>
 </div>
 <footer></footer>
 <script>
-  const acc = document.getElementsByClassName("filter-button");
+  const acc = document.getElementsByClassName("button-wrapper");
   for (let i = 0; i < acc.length; i++) {
     acc[i].addEventListener("click", function () {
       this.classList.toggle("active");

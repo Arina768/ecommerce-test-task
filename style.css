@@ -1,5 +1,5 @@
 html {
-    font-size: 16px;
+    font-size: 14px;
 }
 
 body {
@@ -7,117 +7,19 @@ body {
     margin: 0;
 }
 
-.icon-star:before {
-    background-image: url("assets/star-empty-image.png");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    content: '';
-}
-
-.icon-star:hover:before {
-    background-image: url("assets/star-filled-image.png");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    display: inline-block;
-    cursor: pointer;
-    content: '';
-}
-
-.section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #f9f9f9;
-    padding: 20px;
-    height: 60px;
-    font-size: 1.3rem;
-}
-
-.old-price {
-    text-decoration: line-through;
-    color: #a09c9c;
-    font-size: 1rem;
-}
-
-.catalog__product {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid #dcdada;
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-
-.filter-button {
-    background-color: #275478;
-    color: white;
-    border: none;
-    width: 100%;
-    height: 70px;
-    font-size: 1.5rem;
-    font-style: normal;
-    margin-bottom: 40px;
-    border-radius: 6px;
-    transition: 0.4s;
-}
-
-.active, .filter-button:hover {
-    background-color: #3883c1;
-    cursor: pointer;
-}
-
 .header__title {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     font-weight: lighter;
+    margin: 10px 0 10px 0;
 }
 
-.header, .catalog {
+.header, .catalog, .button-wrapper {
     margin: 20px;
 }
 
 .breadcrumbs {
     display: none;
 }
-
-#sort {
-    width: 60%;
-    height: 80%;
-    border-radius: 6px;
-    font-size: 1.3rem;
-    margin-left: 10px;
-    padding-left: 10px;
-
-}
-
-.sort-menu {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-
-}
-
-.product-image {
-    width: 50%;
-    height: auto;
-}
-
-.product-image img {
-    width: 90%;
-}
-
-.price {
-    font-size: 1.7rem;
-    font-weight: bold;
-}
-
-.red {
-    color: #cc3a3a;
-}
-
 
 .header__return-link {
     display: flex;
@@ -139,8 +41,21 @@ body {
     margin-right: 10px;
 }
 
-.product-title {
-    font-size: 1.3rem;
+.filter-button {
+    background-color: #275478;
+    color: white;
+    border: none;
+    width: 100%;
+    height: 50px;
+    font-size: 1.5rem;
+    font-style: normal;
+    border-radius: 6px;
+    transition: 0.4s;
+}
+
+.active, .filter-button:hover {
+    background-color: #3883c1;
+    cursor: pointer;
 }
 
 .filter {
@@ -157,6 +72,65 @@ body {
     margin-bottom: 15px;
 }
 
+.section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    height: 50px;
+    font-size: 1.3rem;
+}
+
+.select {
+    width: 60%;
+    height: 70%;
+    margin-left: 10px;
+    border: 1px solid #777;
+    border-radius: 0.25em;
+    font-size: 1.25rem;
+    cursor: pointer;
+    line-height: 1.1;
+    background-color: #fff;
+    background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
+}
+
+#sort {
+    width: 100%;
+    height: 100%;
+    padding-left: 10px;
+    background-color: transparent;
+    border: none;
+    font-size: inherit;
+    cursor: inherit;
+    line-height: inherit;
+    outline: none;
+}
+
+#sort::-ms-expand {
+    display: none;
+}
+
+.sort-menu {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+.catalog__product {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #dcdada;
+    padding-bottom: 30px;
+}
+
+.product-title {
+    font-size: 1.3rem;
+}
+
 .underline {
     text-decoration: underline;
 }
@@ -166,15 +140,60 @@ body {
     align-items: center;
 }
 
+.product-info {
+    width: 60%;
+}
+
+
+.product-image {
+    width: 40%;
+    height: auto;
+    margin-right: 20px;
+}
+
+.full-image {
+    width: 100%;
+}
+
+.price {
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #a09c9c;
+    font-size: 1rem;
+}
+
+.red {
+    color: #cc3a3a;
+}
+
+.icon-star:before {
+    background-image: url("assets/star-empty-image.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    content: '';
+}
+
+.icon-star:hover:before {
+    background-image: url("assets/star-filled-image.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: inline-block;
+    cursor: pointer;
+    content: '';
+}
+
 
 @media only screen and (min-width: 768px) {
-    html {
-        font-size: 12px;
-    }
-
     body {
-        margin-left: 150px;
-        margin-right: 150px;
+        margin-left: 15vw;
+        margin-right: 15vw;
     }
 
     .header {
@@ -185,6 +204,7 @@ body {
         display: flex;
         margin-top: 20px;
         list-style: none;
+        padding: 0;
     }
 
     .breadcrumb:after {
@@ -197,14 +217,22 @@ body {
         display: none;
     }
 
+    .main {
+        display: flex;
+    }
+
     .filter {
         display: flex;
-        width: 40vw;
+        width: 40%;
         flex-direction: column;
         max-height: 600px;
         padding: 0;
-        font-size: 1rem;
+        font-size: 1.2rem;
+        min-width: 150px;
+    }
 
+    .select {
+        height: 70%;
     }
 
     .catalog {
@@ -221,14 +249,16 @@ body {
 
     .product-image {
         width: 100%;
-        height: 30%;
+        height: 40%;
+        margin-bottom: 20px;
     }
 
     .product-info {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        height: 70%;
+        height: 60%;
+        width: 100%;
     }
 
     .product-title {
@@ -241,7 +271,6 @@ body {
     }
 
     .section {
-        height: 40px;
         padding: 10px;
     }
 
@@ -250,11 +279,7 @@ body {
     }
 
     .price {
-        font-size: 1.3rem;
-    }
-
-    .main {
-        display: flex;
+        font-size: 1.4rem;
     }
 }
 
