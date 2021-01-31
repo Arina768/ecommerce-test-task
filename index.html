@@ -10,36 +10,36 @@
 </head>
 <body>
 <header></header>
-<div class="header">
-    <a class="header__return-link link mobile" href="/home">
+<div class="page-nav">
+    <a class="page-nav__return-link link mobile" href="#">
         <img class="arrow-icon" src="assets/right%20arrow.png" alt="arrow icon"/>
         <span>Back To Results</span>
     </a>
     <nav aria-label="breadcrumb">
         <ol class="breadcrumbs">
-            <li><a href="/exchange" class="link breadcrumb" aria-label="exchange page">Exchange</a></li>
-            <li><a href="/exchange/shoes" class="link breadcrumb" aria-label="shoes page">Shoes</a></li>
-            <li><a href="/exchange/shoes/athletic-shoes" class="link breadcrumb" aria-label="athletic shoes page">Athletic
+            <li><a href="#" class="link breadcrumb" aria-label="exchange page">Exchange</a></li>
+            <li><a href="#" class="link breadcrumb" aria-label="shoes page">Shoes</a></li>
+            <li><a href="#" class="link breadcrumb" aria-label="athletic shoes page">Athletic
                 shoes</a></li>
             <li> Men's Athletic Shoes</li>
         </ol>
     </nav>
-    <h2 class="header__title">Men's Athletic Shoes</h2>
+    <h2 class="page-nav__title">Men's Athletic Shoes</h2>
 </div>
 <div class="main">
     <div class="button-wrapper mobile">
-        <button class="filter-button " id="filter-button">
+        <button class="filter-button" id="filter-button">
             <label for="filter-button">Filters</label>
         </button>
     </div>
     <div class="filter">
-        <div>
+        <div class="filter__department">
             <h3>Department</h3>
-            <a href="/" class="link underline">
-                <p>Running (215)</p>
+            <a href="#" class="link underline filter-item">
+                Running (215)
             </a>
-            <a href="/" class="link underline">
-                <p>Cleats (81)</p>
+            <a href="#" class="link underline">
+                Cleats (81)
             </a>
         </div>
         <div>
@@ -58,7 +58,7 @@
         <div class="section">
             <span>Viewing 1-24 of 24</span>
             <div class="sort-menu">
-                <label for="sort"> Sort </label>
+                <label for="sort">Sort</label>
                 <div class="select">
                     <select name="sort" id="sort">
                         <option>Select</option>
@@ -75,9 +75,9 @@
                 </div>
                 <div class="product-info">
                     <div>
-                        <h3 class="product-title">Adidas Outdoor Men's Caprock Trail Hiking Shoes</h3>
+                        <a href="#" aria-label="product page" class="product-title">Adidas Outdoor Men's Caprock Trail Hiking Shoes</a>
                         <p class="old-price">$2,499.00</p>
-                        <p>$2,960.00</p>
+                        <p class="bold">$2,960.00</p>
                         <p class="price red">$1,545.00 - $1,230.00 SALE</p>
                     </div>
                     <div class="product-grade">
@@ -86,7 +86,7 @@
                         <span class="icon-star"></span>
                         <span class="icon-star"></span>
                         <span class="icon-star"></span>
-                        <a href="/" class="link" aria-label="grades">(0)</a>
+                        <a href="#" class="link" aria-label="grades">(0)</a>
                     </div>
                 </div>
             </div>
@@ -99,7 +99,7 @@
                 </div>
                 <div class="product-info">
                     <div>
-                        <h3 class="product-title">Nike Men's Air Force 1 Running Shoes</h3>
+                        <a href="#" aria-label="product page" class="product-title">Nike Men's Air Force 1 Running Shoes</a>
                         <p class="price">$2,371.99 - $2,399.99</p>
                     </div>
                     <div class="product-grade">
@@ -108,7 +108,7 @@
                         <span class="icon-star"></span>
                         <span class="icon-star"></span>
                         <span class="icon-star"></span>
-                        <a href="/" class="link" aria-label="grades">(0)</a>
+                        <a href="#" class="link" aria-label="grades">(0)</a>
                     </div>
                 </div>
             </div>
@@ -184,30 +184,30 @@
     </div>
 </div>
 <footer></footer>
-<script>
-  const acc = document.getElementsByClassName("button-wrapper");
-  for (let i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function () {
-      this.classList.toggle("active");
-      const panel = this.nextElementSibling;
-      if (panel.style.display === "block") {
-        panel.style.display = "none";
-      } else {
-        panel.style.display = "block";
-      }
-    });
-  }
-  for (let i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function () {
-      this.classList.toggle("active");
-      const panel = this.nextElementSibling;
-      if (panel.style.maxHeight) {
-        panel.style.maxHeight = null;
-      } else {
-        panel.style.maxHeight = panel.scrollHeight + "px";
-      }
-    });
-  }
+<script src="index.js">
+  // const acc = document.getElementsByClassName("button-wrapper");
+  // for (let i = 0; i < acc.length; i++) {
+  //   acc[i].addEventListener("click", function () {
+  //     this.classList.toggle("active");
+  //     const panel = this.nextElementSibling;
+  //     if (panel.style.display === "block") {
+  //       panel.style.display = "none";
+  //     } else {
+  //       panel.style.display = "block";
+  //     }
+  //   });
+  // }
+  // for (let i = 0; i < acc.length; i++) {
+  //   acc[i].addEventListener("click", function () {
+  //     this.classList.toggle("active");
+  //     const panel = this.nextElementSibling;
+  //     if (panel.style.maxHeight) {
+  //       panel.style.maxHeight = null;
+  //     } else {
+  //       panel.style.maxHeight = panel.scrollHeight + "px";
+  //     }
+  //   });
+  // }
 </script>
 </body>
 </html>
