@@ -10,183 +10,191 @@
 </head>
 <body>
 <header></header>
-<div class="page-nav">
-    <a class="page-nav__return-link link mobile" href="#">
-        <img class="arrow-icon" src="assets/right%20arrow.png" alt="arrow icon"/>
-        <span>Back To Results</span>
-    </a>
-    <nav aria-label="breadcrumb">
-        <ol class="breadcrumbs">
-            <li><a href="#" class="link breadcrumb" aria-label="exchange page">Exchange</a></li>
-            <li><a href="#" class="link breadcrumb" aria-label="shoes page">Shoes</a></li>
-            <li><a href="#" class="link breadcrumb" aria-label="athletic shoes page">Athletic
-                shoes</a></li>
-            <li> Men's Athletic Shoes</li>
-        </ol>
-    </nav>
-    <h2 class="page-nav__title">Men's Athletic Shoes</h2>
-</div>
-<div class="main">
-    <div class="button-wrapper mobile">
-        <button class="filter-button" id="filter-button">
-            <label for="filter-button">Filters</label>
-        </button>
+<main>
+    <div class="page-nav">
+        <a class="page-nav__return-link link mobile" href="#" aria-label="back to results link">
+            <img class="arrow-icon" src="assets/right%20arrow.png" alt="arrow icon"/>
+            <span>Back To Results</span>
+        </a>
+        <nav aria-label="breadcrumbs">
+            <ol class="breadcrumbs">
+                <li><a href="#" class="link breadcrumb" aria-label="link to exchange page">Exchange</a></li>
+                <li><a href="#" class="link breadcrumb" aria-label="link to shoes page">Shoes</a></li>
+                <li><a href="#" class="link breadcrumb" aria-label="link to athletic shoes page">Athletic
+                    shoes</a></li>
+                <li class="bold"> Men's Athletic Shoes</li>
+            </ol>
+        </nav>
+        <h1 class="page-nav__title">Men's Athletic Shoes</h1>
     </div>
-    <div class="filter">
-        <div class="filter__department">
-            <h3>Department</h3>
-            <a href="#" class="link underline filter-item">
-                Running (215)
-            </a>
-            <a href="#" class="link underline">
-                Cleats (81)
-            </a>
+    <div class="catalog">
+        <div class="button-wrapper mobile">
+            <button id="filter-button" aria-label="filters button">
+                Filters
+            </button>
+        </div>
+        <div class="catalog__filter">
+            <div class="filter__department">
+                <h2 class="filter__title">Department</h2>
+                <a href="#" class="link underline filter-item" aria-label="link to running department">
+                    Running (215)
+                </a>
+                <a href="#" class="link underline" aria-label="link to cleats department">
+                    Cleats (81)
+                </a>
+            </div>
+            <div>
+                <h2 class="filter__title">Brand</h2>
+                <div class="filter-item">
+                    <input type="checkbox" id="361-degrees">
+                    <label for="361-degrees">361 Degrees (7)</label>
+                </div>
+                <div class="filter-item">
+                    <input type="checkbox" id="adidas">
+                    <label for="adidas">Adidas (60)</label>
+                </div>
+            </div>
         </div>
         <div>
-            <h3>Brand</h3>
-            <div class="filter-item">
-                <input type="checkbox" id="361-degrees">
-                <label for="361-degrees">361 Degrees (7)</label>
-            </div>
-            <div class="filter-item">
-                <input type="checkbox" id="adidas">
-                <label for="adidas">Adidas (60)</label>
-            </div>
-        </div>
-    </div>
-    <div>
-        <div class="section">
-            <span>Viewing 1-24 of 24</span>
-            <div class="sort-menu">
-                <label for="sort">Sort</label>
-                <div class="select">
-                    <select name="sort" id="sort">
-                        <option>Select</option>
-                    </select>
-                </div>
-            </div>
-        </div>
-        <div class="catalog">
-            <div class="catalog__product">
-                <div class="product-image">
-                    <a href="#" aria-label="product page">
-                        <img class="full-image" alt="product image" src="assets/product-image_0.png">
-                    </a>
-                </div>
-                <div class="product-info">
-                    <div>
-                        <a href="#" aria-label="product page" class="product-title">Adidas Outdoor Men's Caprock Trail
-                            Hiking Shoes</a>
-                        <p class="old-price">$2,499.00</p>
-                        <p class="bold">$2,960.00</p>
-                        <p class="price red">$1,545.00 - $1,230.00 SALE</p>
-                    </div>
-                    <div class="product-grade">
-                        <span class="icon-star"></span>
-                        <span class="icon-star"></span>
-                        <span class="icon-star"></span>
-                        <span class="icon-star"></span>
-                        <span class="icon-star"></span>
-                        <a href="#" class="link" aria-label="grades">(0)</a>
+            <div class="catalog__section">
+                <span>Viewing 1-24 of 24</span>
+                <div class="sort-menu">
+                    <label for="sort">Sort</label>
+                    <div class="select">
+                        <select name="sort" id="sort">
+                            <option>Select</option>
+                        </select>
                     </div>
                 </div>
             </div>
-            <div class="catalog__product border-none">
-                <div class="product-image">
-                    <a href="#" aria-label="product page">
-                        <img alt="product image" class="full-image" src="assets/product-image_1.png">
-                    </a>
-                </div>
-                <div class="product-info">
-                    <div>
-                        <a href="#" aria-label="product page" class="product-title">Nike Men's Air Force 1 Running
-                            Shoes</a>
-                        <p class="price">$2,371.99 - $2,399.99</p>
+            <div class="catalog__products">
+                <div class="product">
+                    <div class="product__image">
+                        <a href="#" aria-label="link to this product page">
+                            <img class="full-image" alt="adidas shoes image" src="assets/product-image_0.png">
+                        </a>
                     </div>
-                    <div class="product-grade">
-                        <span class="icon-star"></span>
-                        <span class="icon-star"></span>
-                        <span class="icon-star"></span>
-                        <span class="icon-star"></span>
-                        <span class="icon-star"></span>
-                        <a href="#" class="link" aria-label="grades">(0)</a>
-                    </div>
-                </div>
-            </div>
-            <div class="catalog__product">
-                <div class="product-image">
-                    <a href="#" aria-label="product page">
-                        <img class="full-image" alt="product image" src="assets/product-image_0.png">
-                    </a>
-                </div>
-                <div class="product-info">
-                    <div>
-                        <a href="#" aria-label="product page" class="product-title">Adidas Outdoor Men's Caprock Trail
-                            Hiking Shoes</a>
-                        <p class="old-price">$2,499.00</p>
-                        <p class="bold">$2,960.00</p>
-                        <p class="price red">$1,545.00 - $1,230.00 SALE</p>
-                    </div>
-                    <div class="product-grade">
-                        <span class="icon-star"></span>
-                        <span class="icon-star"></span>
-                        <span class="icon-star"></span>
-                        <span class="icon-star"></span>
-                        <span class="icon-star"></span>
-                        <a href="#" class="link" aria-label="grades">(0)</a>
+                    <div class="product__info">
+                        <div class="product__description">
+                            <a href="#" aria-label="link to this product page" class="product__title">Adidas Outdoor Men's Caprock Trail
+                                Hiking Shoes</a>
+                            <div>
+                                <p class="old-price">$2,499.00</p>
+                                <p class="regular-price">$2,960.00</p>
+                                <p class="sale-price">$1,545.00 - $1,230.00 SALE</p>
+                            </div>
+                        </div>
+                        <div class="product__grade">
+                            <span class="icon-star"></span>
+                            <span class="icon-star"></span>
+                            <span class="icon-star"></span>
+                            <span class="icon-star"></span>
+                            <span class="icon-star"></span>
+                            <a href="#" class="link" aria-label="link to product's reviews">(0)</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="catalog__product border-none">
-                <div class="product-image">
-                    <a href="#" aria-label="product page">
-                        <img alt="product image" class="full-image" src="assets/product-image_1.png">
-                    </a>
-                </div>
-                <div class="product-info">
-                    <div>
-                        <a href="#" aria-label="product page" class="product-title">Nike Men's Air Force 1 Running
-                            Shoes</a>
-                        <p class="price">$2,371.99 - $2,399.99</p>
+                <div class="product border-none">
+                    <div class="product__image">
+                        <a href="#" aria-label="link to this product page">
+                            <img alt="nike shoes image" class="full-image" src="assets/product-image_1.png">
+                        </a>
                     </div>
-                    <div class="product-grade">
-                        <span class="icon-star"></span>
-                        <span class="icon-star"></span>
-                        <span class="icon-star"></span>
-                        <span class="icon-star"></span>
-                        <span class="icon-star"></span>
-                        <a href="#" class="link" aria-label="grades">(0)</a>
+                    <div class="product__info">
+                        <div>
+                            <a href="#" aria-label="link to this product page" class="product__title">Nike Men's Air Force 1 Running
+                                Shoes</a>
+                            <p class="price-range">$2,371.99 - $2,399.99</p>
+                        </div>
+                        <div class="product__grade">
+                            <span class="icon-star"></span>
+                            <span class="icon-star"></span>
+                            <span class="icon-star"></span>
+                            <span class="icon-star"></span>
+                            <span class="icon-star"></span>
+                            <a href="#" class="link" aria-label="link to product's reviews">(0)</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="catalog__product">
-                <div class="product-image">
-                    <a href="#" aria-label="product page">
-                        <img class="full-image" alt="product image" src="assets/product-image_0.png">
-                    </a>
-                </div>
-                <div class="product-info">
-                    <div>
-                        <a href="#" aria-label="product page" class="product-title">Adidas Outdoor Men's Caprock Trail
-                            Hiking Shoes</a>
-                        <p class="old-price">$2,499.00</p>
-                        <p class="bold">$2,960.00</p>
-                        <p class="price red">$1,545.00 - $1,230.00 SALE</p>
+                <div class="product">
+                    <div class="product__image">
+                        <a href="#" aria-label="link to this product page">
+                            <img class="full-image" alt="adidas shoes image" src="assets/product-image_0.png">
+                        </a>
                     </div>
-                    <div class="product-grade">
-                        <span class="icon-star"></span>
-                        <span class="icon-star"></span>
-                        <span class="icon-star"></span>
-                        <span class="icon-star"></span>
-                        <span class="icon-star"></span>
-                        <a href="#" class="link" aria-label="grades">(0)</a>
+                    <div class="product__info">
+                        <div class="product__description">
+                            <a href="#" aria-label="link to this product page" class="product__title">Adidas Outdoor Men's Caprock Trail
+                                Hiking Shoes</a>
+                            <div>
+                                <p class="old-price">$2,499.00</p>
+                                <p class="regular-price">$2,960.00</p>
+                                <p class="sale-price">$1,545.00 - $1,230.00 SALE</p>
+                            </div>
+                        </div>
+                        <div class="product__grade">
+                            <span class="icon-star"></span>
+                            <span class="icon-star"></span>
+                            <span class="icon-star"></span>
+                            <span class="icon-star"></span>
+                            <span class="icon-star"></span>
+                            <a href="#" class="link" aria-label="link to product's reviews">(0)</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product border-none">
+                    <div class="product__image">
+                        <a href="#" aria-label="link to this product page">
+                            <img alt="nike shoes image" class="full-image" src="assets/product-image_1.png">
+                        </a>
+                    </div>
+                    <div class="product__info">
+                        <div>
+                            <a href="#" aria-label="link to this product page" class="product__title">Nike Men's Air Force 1 Running
+                                Shoes</a>
+                            <p class="price-range">$2,371.99 - $2,399.99</p>
+                        </div>
+                        <div class="product__grade">
+                            <span class="icon-star"></span>
+                            <span class="icon-star"></span>
+                            <span class="icon-star"></span>
+                            <span class="icon-star"></span>
+                            <span class="icon-star"></span>
+                            <a href="#" class="link" aria-label="link to product's reviews">(0)</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product__image">
+                        <a href="#" aria-label="link to this product page">
+                            <img class="full-image" alt="adidas shoes image" src="assets/product-image_0.png">
+                        </a>
+                    </div>
+                    <div class="product__info">
+                        <div class="product__description">
+                            <a href="#" aria-label="link to this product page" class="product__title">Adidas Outdoor Men's Caprock Trail
+                                Hiking Shoes</a>
+                            <div>
+                                <p class="old-price">$2,499.00</p>
+                                <p class="regular-price">$2,960.00</p>
+                                <p class="sale-price">$1,545.00 - $1,230.00 SALE</p>
+                            </div>
+                        </div>
+                        <div class="product__grade">
+                            <span class="icon-star"></span>
+                            <span class="icon-star"></span>
+                            <span class="icon-star"></span>
+                            <span class="icon-star"></span>
+                            <span class="icon-star"></span>
+                            <a href="#" class="link" aria-label="link to product's reviews">(0)</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+</main>
 <footer></footer>
-<script src="index.js"></script>
+<script async src="index.js"></script>
 </body>
 </html>

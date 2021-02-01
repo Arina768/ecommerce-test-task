@@ -1,9 +1,9 @@
-const button = document.getElementById("filter-button");
+const filterButton = document.getElementById("filter-button");
 
-button.addEventListener("click", function () {
+filterButton.addEventListener("click", function () {
   this.classList.toggle("active");
-  const panel = document.getElementsByClassName('filter')[0];
-  console.log(panel)
+  const panel = document.getElementsByClassName('catalog__filter')[0];
+
   if (panel.style.maxHeight) {
     panel.style.maxHeight = null;
   } else {
